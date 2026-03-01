@@ -1,0 +1,18 @@
+# 示例：视频博客配置文件
+# 复制此文件为 videos.yaml 并添加你的视频
+
+videos:
+  # Brief 模式：简洁摘要（3-5 个要点）
+  - url: https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID_1
+    mode: brief
+
+  # Detailed 模式：详细学习笔记
+  - url: https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID_2
+    mode: detailed
+
+  # 不指定 mode 时使用 settings.default_mode
+  - url: https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID_3
+
+settings:
+  default_mode: brief  # brief（简洁）或 detailed（详细）
+  output_file: ./output/my_video_blog.md
